@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
         },
       }}
     >
-   <div  style={{backgroundColor:'#87787A'}} className=" w-full absolute h-full bg-gray-100 hover:bg-gray-200 rounded text-grey-500  text-5xl p-2" ></div>
+   <div  style={{backgroundColor:'#87787A'}} className=" w-full absolute h-full  rounded text-grey-500  text-5xl p-2" ></div>
 
    <Box  className=" w-12 h-12 fixed top-5 bg-gray-100 hover:bg-gray-200 rounded text-grey-500  text-5xl p-2"  />
 
