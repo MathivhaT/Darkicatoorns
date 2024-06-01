@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
           <MissingItems />
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
-          <ToolsAvailability />
+          <ToolsAvailability  />
         </Grid>
 
         {/* third row */}

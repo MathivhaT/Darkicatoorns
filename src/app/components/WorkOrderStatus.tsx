@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import {
+  Box,
   Card,
   Grid,
   List,
@@ -89,12 +90,12 @@ const WorkOrderStatus: React.FC = () => {
   }, [workOrderStatusData]);
 
   return (
-    <Card sx={{ padding: "2em" }} className="rounded-xl	">
+    <Card sx={{ padding: "2em" }} 	className='rounded-xl h-full	'>
       <Typography variant="h6" className="font-semibold pb-2">
         Work Order Status
       </Typography>
-
-      <Grid container spacing={2} className="m-auto">
+      <Box className="flex justify-center align-center p4 h-full">
+      <Grid container spacing={2} >
         {/* First row */}
         <Grid
           item
@@ -141,6 +142,8 @@ const WorkOrderStatus: React.FC = () => {
           </List>{" "}
         </Grid>
       </Grid>
+      </Box>
+     
     </Card>
   );
 };

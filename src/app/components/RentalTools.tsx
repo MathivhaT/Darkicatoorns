@@ -18,7 +18,7 @@ const RentalTools: React.FC = () => {
   }, []);
 
   return (
-    <Card sx={{padding:'2em'}} className='rounded-xl	'>
+    <Card sx={{padding:'2em'}} className='rounded-xl h-full	'>
       <Typography variant="h6" className='font-semibold pb-2' >
         <HandymanOutlinedIcon className='text-4xl pb-2 pr-2'></HandymanOutlinedIcon>
          Rental Tools

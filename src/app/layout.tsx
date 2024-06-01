@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"></meta>
-    <body  className={inter.className}>{children}</body>
+    <body  style={{zoom:'0.8'}} className={inter.className}>{children}</body>
   </html>
   );
 }

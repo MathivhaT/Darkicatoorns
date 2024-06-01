@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import { Card, Grid, Paper, Typography } from "@mui/material";
+import { Box, Card, Grid, Paper, Typography } from "@mui/material";
 import { Gauge, gaugeClasses } from "@mui/x-charts";
 import BuildIcon from "@mui/icons-material/Build";
 import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
@@ -25,12 +25,13 @@ const ToolsAvailability: React.FC = () => {
   }, []);
 
   return (
-    <Card sx={{ padding: "2em" }} className="rounded-xl	">
+    <Card sx={{ padding: "2em" }} className="rounded-xl h-full	">
       <Typography variant="h6" className="font-semibold pb-2">
         Tools and Equipments Availability
       </Typography>
+      <Box className="flex  justify-center text-center align-center p4 h-full">
 
-      <Grid container spacing={2} className="m-auto">
+      <Grid container spacing={2}  justifyContent={'center'} alignContent={'center'} className="m-auto  ">
         {/* First row */}
         <Grid item xs={4} justifyContent={'center'} alignContent={'center'}>
           <HandymanOutlinedIcon className=" text-black text-4xl" />
@@ -79,6 +80,7 @@ const ToolsAvailability: React.FC = () => {
           />
         </Grid>
       </Grid>
+      </Box>
     </Card>
   );
 };

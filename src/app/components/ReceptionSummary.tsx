@@ -21,10 +21,11 @@ const ReceptionSummary: React.FC = () => {
   }, []);
 
   return (
-    <Box sx={{ padding: "2em" }} >
+    <Box sx={{ padding: "2em" }} className='rounded-xl h-full	' >
       <Typography variant="h6" className="font-semibold pb-2">
         Reception Summary
       </Typography>
+      <Box className="flex justify-center align-center p4 h-full">
       <Grid container spacing={2} className="m-auto">
         {/* First row */}
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
@@ -49,6 +50,7 @@ const ReceptionSummary: React.FC = () => {
           <Typography>{receptionSummaryData.pendingItems}</Typography>
         </Grid>
       </Grid>
+      </Box>      
     </Box>
   );
 };
