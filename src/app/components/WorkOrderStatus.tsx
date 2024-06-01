@@ -134,7 +134,8 @@ const WorkOrderStatus: React.FC = () => {
               <ListItemIcon>
                 <FiberManualRecordIcon className="text-red-500" />
               </ListItemIcon>
-              <ListItemText className="text-sm"  primary="Due       " />
+              <ListItemText className="text-sm" 
+               primary="Due       " />
               <ListItemIcon>{workOrderStatusData.due}</ListItemIcon>
             </ListItem>
           </List>{" "}

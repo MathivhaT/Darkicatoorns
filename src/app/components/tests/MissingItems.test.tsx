@@ -16,6 +16,6 @@ const mockMissingItemsData = [
 test('renders MissingItems component', async () => {
   const { getByText } = render(<MissingItems />);
   await waitFor(() => {
-    expect(getByText('Missing Items')).toBeInTheDocument();
+    expect(getByText('Missing Items')).toBeTruthy();
   });
 });

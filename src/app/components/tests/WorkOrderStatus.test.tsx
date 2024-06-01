@@ -12,6 +12,6 @@ const mockWorkOrderStatusData = { completed: 7, inProgress: 3, due: 2 };
 test('renders WorkOrderStatus component', async () => {
   const { getByText } = render(<WorkOrderStatus />);
   await waitFor(() => {
-    expect(getByText('Work Order Status')).toBeInTheDocument();
+    expect(getByText('Work Order Status')).toBeTruthy();
   });
 });
