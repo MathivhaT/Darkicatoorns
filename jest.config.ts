@@ -4,6 +4,7 @@ const config: Config.InitialOptions = {
   clearMocks: true,
   collectCoverage: true,
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  testEnvironment: 'jsdom',
   coverageDirectory: 'coverage',
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',

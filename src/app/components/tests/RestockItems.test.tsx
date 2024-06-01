@@ -16,6 +16,6 @@ const mockRestockItemsData = [
 test('renders RestockItems component', async () => {
   const { getByText } = render(<RestockItems />);
   await waitFor(() => {
-    expect(getByText('Restock Items')).toBeInTheDocument();
+    expect(getByText('Restock Items')).toBeTruthy();
   });
 });

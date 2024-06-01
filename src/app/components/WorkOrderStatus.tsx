@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import {
+  Box,
   Card,
   Grid,
   List,
@@ -71,12 +72,12 @@ const WorkOrderStatus: React.FC = () => {
                 const text = totalCompleted.toString() + "\n Completed" + "";
 
                 ctx.restore();
-                const fontSize = 0.5;
+                const fontSize = 0.6;
                 ctx.font = `${fontSize}em sans-serif`;
                 ctx.textBaseline = "middle";
 
-                const textX = width / 2 - 25;
-                const textY = height / 2;
+                const textX = width / 2 - 26;
+                const textY = height / 2 + 6;
 
                 ctx.fillText(text, textX, textY);
                 ctx.save();
@@ -89,12 +90,12 @@ const WorkOrderStatus: React.FC = () => {
   }, [workOrderStatusData]);
 
   return (
-    <Card sx={{ padding: "2em" }} className="rounded-xl	">
+    <Card sx={{ padding: "2em" }} 	className='rounded-xl h-full	'>
       <Typography variant="h6" className="font-semibold pb-2">
         Work Order Status
       </Typography>
-
-      <Grid container spacing={2} className="m-auto">
+      <Box className="flex justify-center align-center p4 h-full">
+      <Grid container spacing={2} >
         {/* First row */}
         <Grid
           item
@@ -116,30 +117,33 @@ const WorkOrderStatus: React.FC = () => {
             sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
             aria-label="contacts"
           >
-            <ListItem disablePadding>
+            <ListItem disablePadding >
               <ListItemIcon>
                 <FiberManualRecordIcon className="text-green-500" />
               </ListItemIcon>
               <ListItemText className="text-sm"  primary="Completed" />
               <ListItemIcon>{workOrderStatusData.completed}</ListItemIcon>
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem disablePadding className="divide-y divide-gray-200">
               <ListItemIcon>
                 <FiberManualRecordIcon className="text-amber-500" />
               </ListItemIcon>
               <ListItemText className="text-sm" primary="Work In Progress" />
               <ListItemIcon>{workOrderStatusData.inProgress}</ListItemIcon>
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem disablePadding className="divide-y divide-gray-200">
               <ListItemIcon>
                 <FiberManualRecordIcon className="text-red-500" />
               </ListItemIcon>
-              <ListItemText className="text-sm"  primary="Due       " />
+              <ListItemText className="text-sm" 
+               primary="Due       " />
               <ListItemIcon>{workOrderStatusData.due}</ListItemIcon>
             </ListItem>
           </List>{" "}
         </Grid>
       </Grid>
+      </Box>
+     
     </Card>
   );
 };

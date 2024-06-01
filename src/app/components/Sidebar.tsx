@@ -27,32 +27,32 @@ const Sidebar: React.FC = () => {
     >
    <div  style={{backgroundColor:'#87787A'}} className=" w-full absolute h-full  rounded text-grey-500  text-5xl p-2" ></div>
 
-   <Box  className=" w-12 h-12 fixed top-5 bg-gray-100 hover:bg-gray-200 rounded text-grey-500  text-5xl p-2"  />
+   <Box  className=" w-12 h-12 fixed top-5 bg-gray-100 hover:bg-gray-500 rounded text-grey-500  text-5xl p-2"  />
 
 <List className="w-full mt-8">
   <ListItem  className=" flex justify-center">
     <ListItemIcon >
-      <HomeIcon className=" hover:bg-gray-200 hover:rounded text-grey-500 text-4xl p-2" />
+      <HomeIcon className=" hover:bg-gray-500 hover:rounded text-white text-5xl p-2" />
     </ListItemIcon>
   </ListItem>
   <ListItem  className="flex justify-center ">
     <ListItemIcon>
-      <BuildIcon className=" hover:bg-gray-200 hover:rounded text-grey-500 text-4xl p-2"  />
+      <BuildIcon className=" hover:bg-gray-500 hover:rounded text-white text-5xl p-2"  />
     </ListItemIcon>
   </ListItem>
   <ListItem  className=" flex justify-center">
     <ListItemIcon>
-      <AssessmentIcon className=" hover:bg-gray-200 hover:rounded text-grey-500 text-4xl p-2"  />
+      <AssessmentIcon  className=" hover:bg-gray-500 hover:rounded   text-white text-5xl p-2"  />
     </ListItemIcon>
   </ListItem>
   <ListItem  className=" flex justify-center">
     <ListItemIcon>
-      <BarChartIcon className=" hover:bg-gray-200 hover:rounded text-grey-500 text-4xl p-2"  />
+      <BarChartIcon className=" hover:bg-gray-500 hover:rounded  text-white text-5xl p-2"  />
     </ListItemIcon>
   </ListItem>
 
 </List>
-<SettingsIcon  className=" fixed bottom-5 bg-gray-100 hover:bg-gray-200 rounded-full text-grey-500  text-5xl p-2"  />
+<SettingsIcon  className=" fixed bottom-5 bg-gray-100 hover:bg-gray-500 rounded-full hover:text-white  text-5xl p-2"  />
 
    
     
