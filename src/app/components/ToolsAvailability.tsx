@@ -37,7 +37,7 @@ const ToolsAvailability: React.FC = () => {
           <HandymanOutlinedIcon className=" text-black text-4xl" />
         </Grid>
         <Grid item xs={4} justifyContent={'center'} alignContent={'center'}>
-          <Typography  >
+          <Typography className="font-semibold" >
             Rental Items
           </Typography>
         </Grid>
@@ -61,7 +61,7 @@ const ToolsAvailability: React.FC = () => {
         <BuildIcon className=" text-black text-4xl" />
         </Grid>
         <Grid item xs={4}  justifyContent={'center'} alignContent={'center'}>
-          <Typography  >
+          <Typography className="font-semibold" >
           Spare Parts
           </Typography>
         </Grid>

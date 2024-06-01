@@ -30,24 +30,24 @@ const ReceptionSummary: React.FC = () => {
         {/* First row */}
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
           
-          <Inventory2OutlinedIcon className=" text-black text-6xl text-center" />
+          <Inventory2OutlinedIcon className=" text-black text-5xl text-center" />
         </Grid>
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
-          <Typography>Received Packages</Typography>
+          <Typography className="font-semibold">Received Packages</Typography>
         </Grid>
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
-          <Typography>{receptionSummaryData.receivedItems}</Typography>
+          <Typography className="font-semibold">{receptionSummaryData.receivedItems}</Typography>
         </Grid>
 
         {/* Second row */}
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
-          <InventoryOutlinedIcon className=" text-black text-6xl" />
+          <InventoryOutlinedIcon className=" text-black text-5xl" />
         </Grid>
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
-          <Typography>Processed Packages</Typography>
+          <Typography className="font-semibold">Processed Packages</Typography>
         </Grid>
         <Grid item xs={4} justifyContent={"center"} alignContent={"center"}>
-          <Typography>{receptionSummaryData.pendingItems}</Typography>
+          <Typography className="font-semibold">{receptionSummaryData.pendingItems}</Typography>
         </Grid>
       </Grid>
       </Box>      

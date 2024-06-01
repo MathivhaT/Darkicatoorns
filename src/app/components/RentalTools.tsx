@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { Card, Paper, Typography } from '@mui/material';
+import { Box, Card, Paper, Typography } from '@mui/material';
 import { fetchRentalTools } from '../services/dataService';
 import Table from './Table';
 import { RentalTool } from '../interfaces/interfaces'; // Assuming RentalTool interface is defined in 'interfaces/interfaces'
@@ -18,12 +18,16 @@ const RentalTools: React.FC = () => {
   }, []);
 
   return (
+    
     <Card sx={{padding:'2em'}} className='rounded-xl h-full	'>
       <Typography variant="h6" className='font-semibold pb-2' >
         <HandymanOutlinedIcon className='text-4xl pb-2 pr-2'></HandymanOutlinedIcon>
          Rental Tools
       </Typography>
+      <Box className="flex  justify-center text-center align-center p4 h-full">
+
       <Table data={data} />
+      </Box>
     </Card>
   );
 };
